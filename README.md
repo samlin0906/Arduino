@@ -22,6 +22,7 @@ This makes it possible to represent binary words in such a way that the decimal 
 https://www.sps-lehrgang.de/bcd-code/
 
 //int DectoBCD(int Dec, unsigned char *Bcd, int length)
+
 {
      int i;
      int temp;
@@ -35,7 +36,9 @@ https://www.sps-lehrgang.de/bcd-code/
  
      return 0;
 
+
 //unsigned long  BCDtoDec(const unsigned char *bcd, int length)
+
 {
      int i, tmp;
      unsigned long dec = 0;
