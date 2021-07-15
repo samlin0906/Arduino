@@ -8,9 +8,13 @@ The DS3231 is a serial RTC driven by a temperaturecompensated
 32kHz crystal oscillator.
 
 Binary-Coded Decimal, BCD
-BCD 數字是使用BYTE、WORD 和 DWORD 數據類型的十六進制數字的子集。因此，BCD 數字在 STEP7 中輸入為十六進制數字，
-但僅使用數字 0 到 9，如在十進制系統中。不使用十六進制數字 A 到 F。通過在 8421 編碼（最常用）的基礎上使用 BCD 數字，
-可以以簡化的方式表示數字。這使得以可以逐位讀取十進制值的方式來表示二進製字成為可能。
+There is no special standard for BCD numbers. There are no special data types for BCD code in Step7 either. 
+BCD numbers are a subset of the hexadecimal numbers for which the data types BYTE, WORD and DWORD are used. 
+Therefore, BCD numbers are entered as hexadecimal numbers in STEP7, but only the digits 0 to 9 are used, as in the decimal system. 
+The hexadecimal digits A to F are not used. 
+By using the BCD numbers on the basis of the 8421 code (is most frequently used and is also the best-known BCD coding), 
+it is possible to represent numbers in a simplified manner. 
+This makes it possible to represent binary words in such a way that the decimal value can be read digit by digit. 
 https://www.sps-lehrgang.de/bcd-code/
 
 int DectoBCD(int Dec, unsigned char *Bcd, int length)
