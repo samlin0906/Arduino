@@ -1,13 +1,14 @@
 # RTC
 
-Wire Library
+//Wire Library
 This library allows you to communicate with I2C / TWI devices. 
 On the Arduino boards with the R3 layout (1.0 pinout), the SDA (data line) and SCL (clock line) are on the pin headers close to the AREF pin.
 
-The DS3231 is a serial RTC driven by a temperaturecompensated
+//DS3231 
+is a serial RTC driven by a temperaturecompensated
 32kHz crystal oscillator.
 
-Binary-Coded Decimal, BCD
+//Binary-Coded Decimal, BCD
 There is no special standard for BCD numbers. There are no special data types for BCD code in Step7 either. 
 BCD numbers are a subset of the hexadecimal numbers for which the data types BYTE, WORD and DWORD are used. 
 Therefore, BCD numbers are entered as hexadecimal numbers in STEP7, but only the digits 0 to 9 are used, as in the decimal system. 
@@ -17,7 +18,7 @@ it is possible to represent numbers in a simplified manner.
 This makes it possible to represent binary words in such a way that the decimal value can be read digit by digit. 
 https://www.sps-lehrgang.de/bcd-code/
 
-int DectoBCD(int Dec, unsigned char *Bcd, int length)
+//int DectoBCD(int Dec, unsigned char *Bcd, int length)
 {
      int i;
      int temp;
@@ -31,7 +32,7 @@ int DectoBCD(int Dec, unsigned char *Bcd, int length)
  
      return 0;
 
-unsigned long  BCDtoDec(const unsigned char *bcd, int length)
+//unsigned long  BCDtoDec(const unsigned char *bcd, int length)
 {
      int i, tmp;
      unsigned long dec = 0;
