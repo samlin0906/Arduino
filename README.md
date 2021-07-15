@@ -1,5 +1,3 @@
-# Arduino
-# 12C
 # RTC
 
 Wire Library
