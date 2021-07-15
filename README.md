@@ -48,6 +48,7 @@ https://www.sps-lehrgang.de/bcd-code/
  
      return dec;
 }
+
 http://www.cxyzjd.com/article/u010780613/50497058
 
 
