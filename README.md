@@ -1,4 +1,9 @@
-# RTC
+# Reference && RTC
+
+//https://www.arduino.cc/reference/en/
+//https://www.itread01.com/content/1550268552.html
+//https://zhuanlan.zhihu.com/p/56741831
+//https://zhuanlan.zhihu.com/p/349838613
 
 //Wire Library
 
