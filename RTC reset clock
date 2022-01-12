@@ -58,7 +58,7 @@ void printDate(){
   Wire.write(zero);
   Wire.endTransmission();
 
-  Wire.requestFrom(DS1307_ADDRESS, 7); //Wire.requestFrom(address, quantity)
+  Wire.requestFrom(DS3231_ADDRESS, 7); //Wire.requestFrom(address, quantity)
 
   int second = bcdToDec(Wire.read());
   int minute = bcdToDec(Wire.read());
